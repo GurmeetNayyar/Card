@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Mulish';
+
+
+        }
+
+        .nav-top {
+            position: sticky;
+            top: 0;
+            background-color: #7BFFF0;
+            padding: 8px 54px;
+
+
+            display: flex;
+            flex-wrap: wrap;
+            height: 42px;
+        }
+
+        .nav__logo {
+            height: 32px !important;
+            padding-left: 138px;
+
+        }
+
+
+
+        .nav-top--centre {
+            padding-left: 290px;
+            display: flex;
+            flex-wrap: wrap;
+
+
+
+
+        }
+
+        .nav-top--btn {
+            font-size: 16px;
+            margin-left: 8px;
+            line-height: 34px;
+            padding: 0px 11px;
+        }
+
+        .nav-top--right {
+            padding-left: 280px;
+            display: flex;
+
+            flex-wrap: wrap;
+
+        }
+
+        .nav-top--btn-blue {
+            font-size: 16px;
+            margin-left: 20px;
+            padding: 0px 15px;
+            background-color: #3a36E4;
+            border-radius: 4px;
+            color: white;
+            align-items: center;
+            display: flex;
+            height: 34px;
+
+        }
+
+        .section1 {
+            height: 505px;
+            padding: 70px 0px;
+
+            background-color: #7BFFF0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+        .section1--text {
+            height: 100%;
+            width: 50%;
+            color: black;
+            display: flex;
+            align-items: flex-start;
+            top: 0;
+        }
+
+        .section1__text--position {
+            padding-left: 180px;
+            padding-right: 100px;
+        }
+
+        .section1--image {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: flex-start;
+            padding: 0;
+        }
+
+        .section1--image>img {
+            width: 896px;
+            height: 504px;
+        }
+
+        .section2 {
+            height: 505px;
+            padding: 70px 0px;
+
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        .section2--image {
+            height: 100%;
+            width: 40%;
+            display: flex;
+            align-items: flex-start;
+            padding-left: 177px;
+            overflow: hidden;
+        }
+
+        .section2--image>img {
+            width: 560px;
+            height: 450px;
+        }
+
+        .section2--text {
+            height: 100%;
+            width: 58%;
+            color: black;
+            display: flex;
+            align-items: flex-start;
+            top: 0;
+        }
+
+        .section2__text--position {
+            padding-left: 140px;
+            padding-right: 180px;
+
+        }
+
+        .section2--text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+
+        .section3 {
+            height: 385px;
+            padding: 70px 0px;
+
+            background-color: rgb(251, 251, 251);
+            display: flex;
+            align-items: center;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 60px;
+        }
+
+        .section3--image {
+            height: 100%;
+            width: 49%;
+            display: flex;
+            align-items: flex-start;
+            padding: 0;
+        }
+
+
+        .section3 img {
+            width: 560px;
+            height: 425px;
+        }
+
+        .section3--text {
+            height: 100%;
+            width: 51%;
+            color: black;
+            display: flex;
+            align-items: flex-start;
+            top: 0;
+        }
+
+        .section3__text--position {
+            padding-left: 180px;
+            padding-right: 100px;
+        }
+
+
+        .section3--text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .section4 {
+            height: 475px;
+            padding: 58px 0px;
+            padding-bottom: 25px;
+
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+        }
+
+
+
+        .section4--image {
+            height: 100%;
+            width: 45%;
+            display: flex;
+            align-items: flex-start;
+            padding-left: 177px;
+            overflow: hidden;
+        }
+
+
+
+        .section4--text {
+            height: 100%;
+            width: 55%;
+            color: black;
+            display: flex;
+            align-items: flex-start;
+            top: 0;
+        }
+
+        .section4--text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .section4--image>img {
+            width: 565px;
+            height: 450px;
+        }
+
+
+
+
+
+        .section4__text--position {
+            padding-left: 85px;
+            padding-right: 200px;
+        }
+
+        .heading {
+            font-size: 42px;
+
+
+            line-height: calc(42px + 8px);
+            margin-bottom: 24px;
+            margin-top: 0px;
+
+        }
+
+        p {
+            font-size: 20px;
+            line-height: calc(20px + 8px);
+            margin-bottom: 20px;
+            margin-top: 24px;
+        }
+
+        .btn-blue {
+            font-size: 20px;
+
+            padding: 10px 30px;
+            background-color: #3a36E4;
+            border-radius: 4px;
+            color: white;
+            align-items: center;
+            display: flex;
+            height: 34px;
+            width: fit-content;
+
+        }
+
+        .btn-blue:hover {
+            background-color: #5656FA;
+        }
+
+        .body--txt {
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .body--txt .heading {
+            width: 700px;
+            margin: auto;
+        }
+
+        .body--txt--small {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .guide__user--body {
+            width: 77%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: auto;
+        }
+
+        .guide__user {
+            width: 23%;
+            border: 1px solid rgb(222, 222, 222);
+            border-radius: 8px;
+            margin: 8px;
+            height: 350px;
+        }
+
+        .guide__user p {
+            font-weight: 600;
+        }
+
+        .guide__user>img {
+            padding-top: 32px;
+            width: 70%;
+
+        }
+
+        .guide__user--txt {
+            width: 80%;
+            margin: auto;
+            text-align: start;
+            margin-bottom: 15px;
+        }
+
+        .body--btm {
+            background-color: #7BFFF0;
+            width: 100%;
+            height: 320px;
+            margin-top: 50px;
+
+        }
+
+        .body--btm .heading {
+            width: 700px;
+            margin: auto;
+            padding-top: 80px;
+            text-align: center;
+
+        }
+
+        .body--btm .btn-blue {
+            margin: auto;
+            margin-top: 20px;
+
+        }
+
+        footer {
+            padding-top: 40px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer--left {
+
+            width: 400px;
+            height: 100px;
+
+        }
+
+
+        .footer--left>img {
+            width: 200px;
+            height: 40px;
+            padding-bottom: 20px;
+
+        }
+
+        .footer__logo--btm {
+            padding-left: 38px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .social--btn {
+            border: 1px solid rgb(223, 219, 219);
+            width: 34px;
+            height: 34px;
+            border-radius: 4px;
+            margin-right: 10px;
+            background-color: white;
+
+        }
+
+        .social--btn>img {
+            padding-left: 3px;
+            padding-top: 4px;
+            width: 28px;
+            height: 26px;
+            padding-bottom: 5px;
+
+        }
+
+        .footer--right {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .footer--nav {
+            padding-right: 20px;
+
+        }
+
+        .footer--nav p {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 0px;
+            margin-left: 40px;
+            margin-top: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            line-height: 2.5;
+            font-size: 16px;
+            color: #5d5B75;
+            margin-top: 0px;
+            cursor: pointer;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-top">
+
+        <img src="logo-darker.svg" class="nav__logo">
+        <div class="nav-top--centre">
+            <div class="nav-top--btn"><span>
+                    Create
+                </span></div>
+            <div class="nav-top--btn"><span>
+                    Learn
+                </span>
+            </div>
+            <div class="nav-top--btn"><span>
+                    Support
+                </span>
+            </div>
+        </div>
+        <div class="nav-top--right">
+            <div class="nav-top--btn"><span>
+                    Sign In
+                </span></div>
+            <div class="nav-top--btn-blue"><span>
+                    Get Started
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <div class="section1">
+
+
+
+        <div class="section1--text">
+            <div class="section1__text--position">
+
+                <h2 class="heading">Our Card Maker has a Template for Every Occasion</h2>
+                <p>Let them know that they're on your mind with a beautifully designed greeting card.</p>
+                <div class="btn-blue">
+                    <span>Get Started</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="section1--image">
+            <img src="section1.jpg" alt="image">
+        </div>
+
+    </div>
+    <div class="section2">
+
+        <div class="section2--image">
+            <img src="section2.jpg" alt="image">
+        </div>
+
+        <div class="section2--text">
+            <div class="section2__text--position">
+
+                <h2 class="heading">Create Custom Greeting Cards</h2>
+                <p>From birthdays to <a href="www.com">holidays</a>, there's always a reason to send a greeting card to
+                    someone. Thankfully,
+                    BeFunky's free online Card Maker has all the tools necessary to create a greeting card for any
+                    occasion. Start with one of our professionally designed templates then edit the text, add your own
+                    photos, and change the color scheme for a personal touch. Create your own printable cards that can
+                    be saved as a JPG to share to social media or saved as a PDF for printing. Whether you're creating
+                    Christmas cards, thank you cards, or any other kind of greeting card, BeFunky's Card Maker has a
+                    template for you!</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="section3">
+
+
+
+        <div class="section3--text">
+            <div class="section3__text--position">
+
+                <h2 class="heading">Hand-Crafted Birthday Cards</h2>
+                <p>When it comes to birthdays, our free online Card Maker has what you need to <a href="www.com">create
+                        a personalized
+                        birthday card</a> for that special someone. In just a few simple steps, you can customize a
+                    template to
+                    let your friends and family know you're thinking about them on their big day. Use effortless design
+                    elements to create fun and festive birthday cards. Easily add photos to our card templates, and
+                    create the perfect image right in our Card Maker with access to all the effects from our <a
+                        href="www.com"> Photo
+                        Editor.</a> Or, create a custom image with our <a href="www.com">Collage Maker</a> and add it to
+                    one of our greeting card
+                    templates with drag-and-drop simplicity. No matter who you're celebrating, we've got all you need to
+                    create greeting cards just for them.</p>
+
+            </div>
+
+        </div>
+        <div class="section3--image">
+            <img src="section3.jpg" alt="image">
+        </div>
+
+    </div>
+    <div class="section4">
+
+        <div class="section4--image">
+            <img src="section4.jpg" alt="image">
+        </div>
+
+        <div class="section4--text">
+            <div class="section4__text--position">
+
+                <h2 class="heading">Personalized Greeting Cards</h2>
+                <p>There's something special about a handcrafted greeting card. They offer a personalized touch, letting
+                    your family and friends know you care. With BeFunky's free online Card Maker, you can easily create
+                    personalized greeting cards. Spread the love for Valentine's Day with templates that cover every
+                    relationship status. Warm hearts with festive Christmas cards made from your own images. Or, let
+                    your parents know how much you appreciate them with Mother's Day and Father's Day cards. No matter
+                    the occasion, you can express your love with the simple and stunning greeting card templates found
+                    in our free online Card Maker.</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="section3">
+
+
+
+        <div class="section3--text">
+            <div class="section3__text--position">
+
+                <h2 class="heading">Nothing Says "Thanks" Like a Thoughtfully Designed Card</h2>
+                <p>Thank you cards can be a real pain. After entertaining, feeding, and cleaning up after your guests,
+                    you also have to thank them for attending your event. But with our free online Card Maker, you can
+                    create custom cards with incomparable ease. Take advantage of our drag-and-drop card templates,
+                    easily interchangeable color schemes, a massive collection of fonts for adding text, and beautiful
+                    graphics to produce professional-quality greeting cards in a few easy steps. As you create your
+                    printable card with our free online Card Maker, you'll find unmatched simplicity that any host or
+                    designer can appreciate!</p>
+
+            </div>
+
+        </div>
+        <div class="section3--image">
+            <img src="section5.jpg" alt="image">
+        </div>
+
+    </div>
+    <div class="body--txt">
+        <h2 class="heading">
+            How to Create Greeting Cards in 4 Easy Steps
+        </h2>
+        <div class="body--txt--small">
+            <p>Create custom greeting cards for every special occasion.</p>
+        </div>
+        <div class="guide__user--body">
+
+            <div class="guide__user">
+                <img src="bodytxt--img1.svg" alt="image">
+                <div class="guide__user--txt">
+                    <p>01. Choose a Card Template</p> <span>Go to BeFunky's Card Maker and select one of the
+                        templates.</span>
+                </div>
+
+            </div>
+            <div class="guide__user">
+                <img src="bodytxt2.svg" alt="image">
+                <div class="guide__user--txt">
+                    <p>02. Upload Your Own Photos
+                        .</p> <span> Add photos to your card template for a personal touch</span>
+                </div>
+
+            </div>
+            <div class="guide__user">
+                <img src="bodttext3.svg" alt="image">
+                <div class="guide__user--txt">
+                    <p>03. Personalize It
+                    </p> <span> Personalize your greeting card: add text, swap colors, and design elements.</span>
+                </div>
+
+            </div>
+            <div class="guide__user">
+                <img src="body-txt4.svg" alt="image">
+                <div class="guide__user--txt">
+                    <p>04. Save Your Project
+                    </p> <span> Export a PDF to print or share your greeting card to social media.</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="body--btm">
+        <h2 class="heading">
+            How to Create Greeting Cards in 4 Easy Steps
+        </h2>
+        <div class="btn-blue">
+            <span>Get Started</span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer--left"> <img src="logo-darker.svg" alt="logo image">
+            <div class="footer__logo--btm">
+                <div class="social--btn"><img src="pinterest.png" alt="pinterest"></div>
+                <div class="social--btn"><img src="twitter.png" alt="pinterest"></div>
+                <div class="social--btn"><img src="facebook.png" alt="pinterest"></div>
+                <div class="social--btn"><img src="instagram.png" alt="pinterest"></div>
+                <div class="social--btn"><img src="linkedin.jpg" alt="pinterest"></div>
+                <div class="social--btn"><img src="youtube.png" alt="pinterest"></div>
+            </div>
+        </div>
+        <div class="footer--right">
+            <div class="footer--nav">
+                <p>Products</p>
+                <ul>
+                    <li>Photo Editor</li>
+                    <li>Collage Maker</li>
+                    <li>Graphic Designer</li>
+                    <li>Pricing</li>
+                    <li>BeFunky Mobile</li>
+                    <li>Vision</li>
+                </ul>
+            </div>
+            <div class="footer--nav">
+                <p>Features</p>
+                <ul>
+                    <li>Photo Effects</li>
+                    <li>Touch up</li>
+                    <li>photo to art</li>
+                    <li>Background remover</li>
+                    <li>essential features</li>
+                    <li>more <i class='fa fa-angle-down'
+                            style='color:#565959;padding-left: 1px;font-size:12px;font-weight:bold;width: 17px;'></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer--nav">
+                <p>Resources</p>
+                <ul>
+                    <li>getting started</li>
+                    <li>user guide</li>
+                    <li>FAQ</li>
+                    <li>tutorials</li>
+                    <li>what's new</li>
+                    <li>case studies</li>
+                    <li>explore</li>
+                </ul>
+            </div>
+            <div class="footer--nav">
+                <p>company</p>
+                <ul>
+                    <li>about</li>
+                    <li>values</li>
+                    <li>press</li>
+                    <li>careers</li>
+                    <li>contact</li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
